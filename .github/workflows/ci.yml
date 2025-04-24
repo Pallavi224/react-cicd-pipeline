@@ -24,7 +24,11 @@ jobs:
             run: node --version
           - name: "Clone the repository"
             uses: actions/checkout@v2
-          #run: git clone
+          
+          - name: "list Directories"
+            run: ls -la
+              
+        
           - name: "Install dependencies"
             run: npm install
 
