@@ -1,0 +1,22 @@
+name: Simple React CI CD Pipeline workflow
+on:
+  push:
+    branches:
+      - master
+      - main
+  
+
+
+
+
+jobs: 
+    build_and_test:
+        runs-on: ubuntu-latest
+        
+        
+        steps:
+        - name: "setup Node JS"
+            uses: actions/setup-node@v2
+            with:
+            node-version: '21'
+    
