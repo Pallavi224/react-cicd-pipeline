@@ -25,6 +25,8 @@ jobs:
           - name: "Clone the repository"
             uses: actions/checkout@v2
           #run: git clone
+          - name: "Install dependencies"
+            run: npm install
 
            
     
